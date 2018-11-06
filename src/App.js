@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import YesNoSelector from './components/YesNoSelector';
+import logo from './checkbox-checked.svg';
 
 class App extends Component {
   render() {
@@ -9,7 +10,8 @@ class App extends Component {
         <section className="card">
             <h1 className="question"><span>Ливерпуль выграл свой матч 06.11.2018?</span></h1>
             <form className="answers">
-                <button className="fab">Кл</button>
+                {/* <button ><img src={logo} className="fab" alt="logo" /></button> */}
+                <img src={logo} className="fab" alt="logo" />
                 <YesNoSelector />
             </form>
         </section>
