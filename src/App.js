@@ -1,25 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import YesNoSelector from './components/YesNoSelector';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="blue-theme">
+        <section className="card">
+            <h1 className="question"><span>Ливерпуль выграл свой матч 06.11.2018?</span></h1>
+            <form className="answers">
+                <button className="fab">Кл</button>
+                <YesNoSelector />
+            </form>
+        </section>
       </div>
     );
   }
